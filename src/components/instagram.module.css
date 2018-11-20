@@ -1,0 +1,25 @@
+.insta {
+    display: grid;
+    justify-content: space-between;
+    margin: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 12.5vw;
+}
+
+.instaImg {
+    font-size: 3em;
+}
+
+@media (max-width: 960px) {
+    .insta {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: calc(100vw/4);
+    }
+}
+
+@media (max-width: 600px) {
+    .insta {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: calc(100vw/4);
+    }
+}

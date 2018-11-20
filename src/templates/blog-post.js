@@ -1,0 +1,116 @@
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link, graphql } from 'gatsby'
+import get from 'lodash/get'
+import Img from 'gatsby-image'
+
+import Bio from '../components/Bio'
+import Layout from '../components/Layout'
+import { rhythm, scale } from '../utils/typography'
+import blogPostStyle from './blog-post.module.css'
+import PlaneBreak from '../components/PlaneBreak';
+import PostHeroImage from '../components/HeroImage';
+
+class BlogPostTemplate extends React.Component {
+  render() {
+    const post = this.props.data.markdownRemark
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteDescription = post.excerpt
+    const { previous, next } = this.props.pageContext
+
+    return (
+      <Layout location={this.props.location}>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: siteDescription }]}
+          title={`${post.frontmatter.title} | ${siteTitle}`}
+        />
+        {/* <div>
+          <Img fluid={post.frontmatter.heroImage.childImageSharp.fluid} />
+        </div> */}
+        <PostHeroImage
+          height={60}
+          image={post.frontmatter.heroImage.childImageSharp.fluid.src}
+          position={post.frontmatter.heroImagePosition}
+        />   
+
+        <div className={blogPostStyle.content} >
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: 'block',
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1),
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+          <PlaneBreak />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              listStyle: 'none',
+              padding: 0,
+              width: '100%'
+            }}
+          >
+            <div>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </div>
+            <div>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+}
+
+export default BlogPostTemplate
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM YYYY")
+        heroImage {
+          childImageSharp {
+            fluid(maxWidth: 1240) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        heroImagePosition
+      }
+    }
+  }
+`
