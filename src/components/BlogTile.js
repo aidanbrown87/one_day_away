@@ -32,7 +32,7 @@ export default class BlogTile extends Component {
           className={tileStyle.blogTileThumb}
           style={style}
           fluid={thumb.childImageSharp.fluid}
-          alt={thumb}
+          alt={slug}
         />
         <div
           className={tileStyle.blogTileOverlay}

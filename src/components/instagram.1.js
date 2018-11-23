@@ -3,9 +3,7 @@ import style from './instagram.module.css'
 
 const InstaImage = (props) => {
   const { src, position, link } = props;
-  console.log(style)
   const style = {
-    //...style.instaImg,
     backgroundImage: 'url(' + src + ')',
     width: '100%',
     height: "auto",

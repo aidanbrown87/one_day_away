@@ -40,7 +40,7 @@ const About = () => {
         <div>{judithText3}</div>
         <img
           src={ajb}
-          alt="jude"
+          alt="aidan"
           style={{
             height: 200,
             width: 'auto',

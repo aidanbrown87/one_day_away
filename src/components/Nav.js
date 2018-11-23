@@ -53,8 +53,8 @@ class Nav extends Component {
             }}
           />
         </Link>
-        <button onClick={this.toggleMenu}>Menu</button>
-        <nav className={navStyles.nav} style={{ width: this.state.menuOpen ? 250 : 0 }}>
+        <button onClick={this.toggleMenu} className={navStyles.menuButton}>Menu</button>
+        <nav className={navStyles.nav} style={{ width: this.state.menuOpen ? 250 : null }}>
           <ListLink to="/">HOME</ListLink>
           <ListLink to="/about/">ABOUT</ListLink>
           <ListLink to="/contact/">CONTACT</ListLink>
