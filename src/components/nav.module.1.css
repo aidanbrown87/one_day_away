@@ -4,10 +4,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-family: 'OpenSans';
+  font-family: 'Playfair Display';
   text-transform: uppercase;
   padding: 0 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.05);
   background-color: white;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;

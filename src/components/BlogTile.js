@@ -44,7 +44,7 @@ export default class BlogTile extends Component {
           <div className={tileStyle.blogTileTitle}>{title}</div>
           <div className={tileStyle.blogTileDate}>{date}</div>
           <Link to={slug} className="button element">
-            Continue Reading
+            Continue reading
           </Link>
         </div>
       </div>

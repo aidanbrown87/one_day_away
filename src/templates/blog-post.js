@@ -4,12 +4,12 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 
-import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import blogPostStyle from './blog-post.module.css'
 import PlaneBreak from '../components/PlaneBreak';
 import PostHeroImage from '../components/HeroImage';
+import PrevNextButton from '../components/PrevNextButton';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -35,17 +35,17 @@ class BlogPostTemplate extends React.Component {
         />   
 
         <div className={blogPostStyle.content} >
-          <h1>{post.frontmatter.title}</h1>
-          <p
+          <h2>{post.frontmatter.title}</h2>
+          <div
             style={{
               ...scale(-1 / 5),
               display: 'block',
-              marginBottom: rhythm(1),
-              marginTop: rhythm(-1),
+              marginBottom: 0,
+              marginTop: 0,
             }}
           >
             {post.frontmatter.date}
-          </p>
+          </div>
           <PlaneBreak />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -64,20 +64,8 @@ class BlogPostTemplate extends React.Component {
               width: '100%'
             }}
           >
-            <div>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </div>
-            <div>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </div>
+            <PrevNextButton isPrev linkObject={previous} />
+            <PrevNextButton linkObject={next} />            
           </div>
         </div>
       </Layout>
@@ -104,7 +92,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM YYYY")
         heroImage {
           childImageSharp {
-            fluid(maxWidth: 1240) {
+            fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
             }
           }

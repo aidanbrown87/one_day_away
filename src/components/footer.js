@@ -11,7 +11,7 @@ export default class Footer extends Component {
         <footer>
           <div className={style.footerText}>
             <div className={style.element}>All rights reserved</div>
-            <div className={style.element}>&copy; PrattBrown 2018</div>
+            <div className={style.element}>&copy; PrattBrown 2019</div>
           </div>
           <img className={style.footerLogo} src={logo} alt="logo" />
         </footer>
