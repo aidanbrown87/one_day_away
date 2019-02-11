@@ -43,6 +43,7 @@ All in all, the most perfect weekend for the most perfect, down to earth, genero
 
 ![Wilderness](./images/heelclick.gif) 
 ###The useful bits:###
-- Location
-- Transport
-- Maps
+- The [Wilderness Reserve](https://www.wildernessreserve.com/) is located in Sibton Park, just near to Yoxford and Saxmundham in Suffolk. Definitely forever house territory.
+- Dunwich beach was about 7 miles from Wilderness: a 15 minute drive.
+- Getting to Suffolk from London by car is pretty easy: a 2hr30 drive mostly on the A12.
+- Arriving by train is a bit trickier: you'd likely need to go via Norwich or Ipswich, depending where you're based.

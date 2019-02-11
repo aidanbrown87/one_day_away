@@ -1,6 +1,6 @@
 ---
 title: "Tales from a Tiny House: 2"
-date: "2017-09-01"
+date: "2017-09-11"
 heroImage: "./images/P1100406.jpg"
 heroImagePosition: "bottom"
 thumbnail: ./images/P1100291.jpg
@@ -13,7 +13,7 @@ We woke on the second morning in our Tiny House, some earlier than others...
 
 | | |
 | --- | --- |
-|![tinyhouse2](./images/DSC_5386.jpg) | ![tinyhouse2](./images/P1100271.jpg)|
+|![tinyhouse2](./images/DSC_5386.JPG) | ![tinyhouse2](./images/P1100271.jpg)|
 
 On the agenda for the day (after a breakfast fit for a birthday king) was more adventuring on the coast. And so, off to Margate we drove.
  
@@ -28,7 +28,7 @@ The winds were powerful and buffeted us as we enjoyed a bracing walk along the s
 |![tinyhouse2](./images/P1100331.jpg) | ![tinyhouse2](./images/P1100328.jpg)|
 
 
-Had we been dog-free, we certainly would have paid the Turner Contemporary a visit. Regardless, the structure was impressive and imposing from the outside and I revelled in a quick dip into the gift shop. Aren't museum gift shops the best?!
+Had we been dog-free, we certainly would have paid the [Turner Contemporary](https://www.turnercontemporary.org/) a visit. Regardless, the structure was impressive and imposing from the outside and I revelled in a quick dip into the gift shop. Aren't museum gift shops the best?!
 
 | | |
 | --- | --- |

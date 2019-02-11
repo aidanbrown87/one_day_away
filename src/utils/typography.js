@@ -53,6 +53,9 @@ const typography = new Typography({
       paddingRight: '0.25em',
       paddingTop: 0,
       paddingBottom: 0,
+    },
+    'footer': {
+      display: 'flex !important',
     }
   })
 })

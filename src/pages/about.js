@@ -13,7 +13,7 @@ import genericStyles from './genericStyle.module.css'
 const judithText1 =
   "Throughout my life, I have been fortunate enough to wander many corners of this wonderful planet we call home. My parents truly understood that 'travel is fatal to prejudice, bigotry and narrow mindedness', and this lesson has lived with me since."
 const judithText2 =
-  "From extended trips across continents to afternoons spent closer to home, it seems ever more relevant to escape our bubbles and explore. This blog is our means of simple story-telling: sometimes exotic, sometimes on our doorstep, but always just one day at a time."
+  "From extended trips across continents to afternoons spent closer to home, it seems ever more relevant to escape our bubbles and explore. This blog is our means of simple story-telling: sometimes exotic, sometimes on our doorstep, but (mostly) just one day at a time."
 const judithText3 =
   "As a fervent organiser, I'm a staunch believer that with a little planning, one day really is all you need. And whether that day turns into weeks, months or even years... as Hemingway aptly asserts, 'it's the journey that matters in the end'."
 const aidanText = "I'm just here for the food."

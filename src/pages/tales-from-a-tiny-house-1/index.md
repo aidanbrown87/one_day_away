@@ -59,7 +59,7 @@ As well as Aidan's birthday, this trip was special for another reason... It was 
 
 ![Tiny House](./images/DSC_5310.jpg)
 
-We also introduced the pooch to the sea. It turns out that terriers aren't renowned for loving the water, even in spite of multiple attempts to coax him in.
+We also introduced the pooch to the sea. It turns out that terriers aren't renowned for loving the water, in spite of multiple attempts to coax him in.
 
 | | |
 | - | - |
