@@ -1,31 +1,44 @@
 import React, { Component } from 'react';
+import Img from 'gatsby-image';
+import styled from 'styled-components'
+import { StaticQuery, graphql } from "gatsby"
+ 
 import style from './instagram.module.css'
-import i8 from '../pages/images/insta/1.jpg'
-import i7 from '../pages/images/insta/2.jpg'
-import i6 from '../pages/images/insta/3.jpg'
-import i5 from '../pages/images/insta/oda_insta_7.jpg'
-import i4 from '../pages/images/insta/5.jpg'
-import i3 from '../pages/images/insta/6.jpg'
-import i2 from '../pages/images/insta/7.jpg'
-import i1 from '../pages/images/insta/8.jpg'
 
 const InstaImage = (props) => {
-  const { src, position, link } = props;
+  const { fluid, link } = props;
   const style = {
-    backgroundImage: 'url(' + src + ')',
     width: '100%',
-    height: "auto",
-    backgroundSize: 'cover',
-    backgroundPosition: position ? position : 'center bottom',
+    height: "100%",
     borderBottom: 'none',
   }
 
   return (
     <a href={link} className="instaImg" style={style} target="_blank" >
-      <div />
+      <StyledImg fluid={fluid} />
     </a>
   )
 }
+
+const StyledImg = styled(Img)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  // Adjust image positioning (if image covers area with defined height) and add font-family for polyfill
+  & > img {
+    object-fit: cover !important;
+    object-position: 50% 50% !important;
+    font-family: 'object-fit: cover !important; object-position: 50% 50% !important;'
+  }
+  & > picture > img {
+    object-fit: cover !important;
+    object-position: 50% 50% !important;
+    font-family: 'object-fit: cover !important; object-position: 50% 50% !important;'
+  }
+`
 
 class Instagram1 extends Component {
   constructor() {
@@ -39,52 +52,39 @@ class Instagram1 extends Component {
     this.fetchInstagram()
 
   }
-  componentDidMount() {
-
-  }
-
-  
-  test(src) {
-    return (
-      <div className="instaImg">
-        <img src={src} alt="instagram" style={{width: '100%', height: 'auto', overflow: 'hidden', borderBottom: 'none' }} />
-      </div>
-    )
-  }
-  
 
   fetchInstagram() {
     const images = [
       {
-        img: i1,
+        img: 'i8',
         link: "https://www.instagram.com/p/BrxU1EaBRCV/",
       },
       {
-        img: i2,
+        img: 'i7',
         link: "https://www.instagram.com/p/BrpW96ahih2/",
       },
       {
-        img: i3,
+        img: 'i6',
         link: "https://www.instagram.com/p/BqCY8jgHahU/",
       },
       {
-        img: i4,
+        img: 'i4',
         link: "https://www.instagram.com/p/Bo1FFmtB1WT/",
       },
       {
-        img: i5,
+        img: 'i5',
         link: "https://www.instagram.com/p/BlnVt3VhQnX/",
       },
       {
-        img: i6,
+        img: 'i3',
         link: "https://www.instagram.com/p/BjVkznNhfva/",
       },
       {
-        img: i7,
+        img: 'i2',
         link: "https://www.instagram.com/p/BfksfdjAiE8/",
       },
       {
-        img: i8,
+        img: 'i1',
         link: "https://www.instagram.com/p/BeoQ0dtAYKt/",
       },
       // {
@@ -119,15 +119,143 @@ class Instagram1 extends Component {
 
   render () {
     const { images } = this.state
+    const { data } = this.props
     return (
       <div
         className={style.insta}
         ref={ref => this.insta = ref}
       >
-        {images ? images.map(({ img, link }) => <InstaImage key={link} src={img} link={link} position={this.props.position} />) : <b>nothing</b>}
+        {images ? images.map(({ img, link }) => <InstaImage key={link} fluid={data[img].childImageSharp.fluid} link={link} position={this.props.position} />) : <b>nothing</b>}
       </div>
     )
   }
 }
 
-export default Instagram1;
+// export default Instagram1;
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        i1: file(relativePath: { eq: "insta/1.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i2: file(relativePath: { eq: "insta/2.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i3: file(relativePath: { eq: "insta/3.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i4: file(relativePath: { eq: "insta/4.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i5: file(relativePath: { eq: "insta/5.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i6: file(relativePath: { eq: "insta/6.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i7: file(relativePath: { eq: "insta/7.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i8: file(relativePath: { eq: "insta/8.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Instagram1 data={data} />}
+  />
+)
+
+// export const query = graphql`
+//   query {
+//     i1: file(relativePath: { eq: "assets/insta/1.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i2: file(relativePath: { eq: "assets/insta/2.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i3: file(relativePath: { eq: "assets/insta/3.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i4: file(relativePath: { eq: "assets/insta/4.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i5: file(relativePath: { eq: "assets/insta/5.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i6: file(relativePath: { eq: "assets/insta/6.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i7: file(relativePath: { eq: "assets/insta/7.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     i8: file(relativePath: { eq: "assets/insta/8.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `

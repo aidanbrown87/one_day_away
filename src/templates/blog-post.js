@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import blogPostStyle from './blog-post.module.css'
 import PlaneBreak from '../components/PlaneBreak';
-import PostHeroImage from '../components/HeroImage';
+import PostHeroImage from '../components/HeroImage.1';
 import PrevNextButton from '../components/PrevNextButton';
 
 class BlogPostTemplate extends React.Component {
@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
         </div> */}
         <PostHeroImage
           height={60}
-          image={post.frontmatter.heroImage.childImageSharp.fluid.src}
+          fluid={post.frontmatter.heroImage.childImageSharp.fluid}
           position={post.frontmatter.heroImagePosition}
         />   
 

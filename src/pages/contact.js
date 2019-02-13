@@ -1,16 +1,17 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import Layout from '../components/Layout'
-import PostHeroImage from '../components/HeroImage';
+import PostHeroImage from '../components/HeroImage.1';
 
 import contact from './images/contact.jpg'
 import genericStyles from './genericStyle.module.css'
 import PlaneBreak from '../components/PlaneBreak';
 import { SocialMedia } from '../components/Nav';
 
-const Contact = () => {
+const Contact = ({ data }) => {
   return (
     <Layout>
-      <PostHeroImage image={contact} height={60} position="center" />
+      <PostHeroImage fluid={data.file.childImageSharp.fluid} height={60} position="center" />
       <div className={genericStyles.content}>
         <h2>Contact Us</h2>
         <PlaneBreak />
@@ -32,3 +33,15 @@ const Contact = () => {
 }
 
 export default Contact
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "images/contact.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Carousel from 'nuka-carousel'
 import { Link, graphql } from 'gatsby'
-import PostHeroImage from './HeroImage'
+import PostHeroImage from './HeroImage.1'
 
 const ImageCarousel = ({ images }) => {
   return (
@@ -17,7 +17,7 @@ const ImageCarousel = ({ images }) => {
         return (
           <PostHeroImage
             key={image.src}
-            image={image.src}
+            fluid={image}
             height={60}
             position={image.position}
           />

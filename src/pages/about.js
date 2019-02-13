@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import PlaneBreak from '../components/PlaneBreak'
-import PostHeroImage from '../components/HeroImage'
+import PostHeroImage from '../components/HeroImage.1'
 
 import judey from './images/judey.jpg'
 import ajb from './images/ajb.jpg'
@@ -18,34 +18,30 @@ const judithText3 =
   "As a fervent organiser, I'm a staunch believer that with a little planning, one day really is all you need. And whether that day turns into weeks, months or even years... as Hemingway aptly asserts, 'it's the journey that matters in the end'."
 const aidanText = "I'm just here for the food."
 
-const About = () => {
+const About = ({ data }) => {
   return (
     <Layout>
-      <PostHeroImage image={judeandidan} height={60} />
+      <PostHeroImage fluid={data.judeaidan.childImageSharp.fluid} height={60} position='bottom' />
       <div className={genericStyles.content}>
         <h2>About Us</h2>
         <PlaneBreak />
 
         <h3>Jude</h3>
-        <img
-          src={judey}
+        <Img
+          fixed={data.judey.childImageSharp.fixed}
           alt="jude"
           style={{
-            height: 200,
-            width: 'auto',
             borderRadius: '50%',
           }}
         />
         <p >{judithText1}</p>
         <p >{judithText2}</p>
         <p>{judithText3}</p>
-       <h3>Aidan</h3>
-        <img
-          src={ajb}
+        <h3>Aidan</h3>
+        <Img
+          fixed={data.aidan.childImageSharp.fixed}
           alt="aidan"
           style={{
-            height: 200,
-            width: 'auto',
             borderRadius: '50%',
           }}
         />
@@ -57,3 +53,29 @@ const About = () => {
 }
 
 export default About
+
+export const query = graphql`
+  query {
+    judeaidan: file(relativePath: { eq: "images/JudeAndAidan.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    judey: file(relativePath: { eq: "images/judey.jpg" }) {
+      childImageSharp {
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    aidan: file(relativePath: { eq: "images/ajb.jpg" }) {
+      childImageSharp {
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
