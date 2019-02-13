@@ -7,20 +7,12 @@ export default class BlogTile extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      opacity: 0,
+      opacity: null,
     }
   }
 
-  setOpacity = () => {
-    this.setState({ opacity: 1 })
-  }
-
-  setNoOpacity = () => {
-    this.setState({ opacity: 0 })
-  }
-
   toggleOpacity = () => {
-    this.setState({ opacity: this.state.opacity === 1 ? 0 : 1 })
+    this.setState({ opacity: this.state.opacity === 1 ? null : 1 })
   }
 
   render() {
@@ -38,8 +30,6 @@ export default class BlogTile extends Component {
           className={tileStyle.blogTileOverlay}
           style={this.state}
           onClick={this.toggleOpacity}
-          onMouseEnter={this.setOpacity}
-          onMouseLeave={this.setNoOpacity}
         >
           <div className={tileStyle.blogTileTitle}>{title}</div>
           <div className={tileStyle.blogTileDate}>{date}</div>
