@@ -7,7 +7,7 @@ backend:
   repo: aidanbrown87/one_day_away
   branch: netlify-test
 
-media_folder: static/assets
+media_folder: static/images/uploads
 public_folder: assets
 
 # This line should *not* be indented
@@ -16,10 +16,22 @@ publish_mode: editorial_workflow
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/pages/blog
     create: true
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: featured, label: Featured, widget: boolean }
+      - { name: heroImage, label: Hero Image, widget: image }
+      - label: "Hero Image Position"
+        name: "heroImagePosition"
+        widget: "select"
+        options: ["left", "center", "right", "top left", "top center", "top right", "bottom left", "bottom center", "bottom right"]
+      - { name: thumbnail, label: Thumbnail, widget: image }
       - { name: body, label: Body, widget: markdown }
+      - label: "Continent"
+        name: 'continent'
+        widget: "select"
+        options: ["Europe", "Asia", "Africa", "North America", "South America", "Australasia"]
+        required: false
