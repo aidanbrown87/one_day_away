@@ -3,7 +3,8 @@
 #   branch: master # Branch to update (optional; defaults to master)
 
 backend:
-  name: test-repo
+  name: github
+  repo: aidanbrown87/one_day_away
   branch: netlify-test
 
 media_folder: static/assets
