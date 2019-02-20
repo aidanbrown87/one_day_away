@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Carousel from 'nuka-carousel'
-import { Link, graphql } from 'gatsby'
-import PostHeroImage from './HeroImage.1'
+import PostHeroImage from './HeroImage'
 
 const ImageCarousel = ({ images }) => {
   return (

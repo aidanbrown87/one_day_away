@@ -3,11 +3,7 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 import PlaneBreak from '../components/PlaneBreak'
-import PostHeroImage from '../components/HeroImage.1'
-
-import judey from './images/judey.jpg'
-import ajb from './images/ajb.jpg'
-import judeandidan from './images/JudeAndAidan.jpg'
+import PostHeroImage from '../components/HeroImage'
 import genericStyles from './genericStyle.module.css'
 
 const judithText1 =

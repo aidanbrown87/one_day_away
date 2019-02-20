@@ -1,20 +1,24 @@
-import React, { Component } from 'react'
+import Image from 'gatsby-image'
+import styled from 'styled-components'
 
-class PostHeroImage extends Component {
-  render() {
-    const { fileName, height, right, position, image } = this.props
+const BgImage = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: ${props => `${props.height}vh` || 'auto'};
 
-    const style = {
-      backgroundImage: `url(${image})`,
-      width: '100%',
-      height: height ? height + 'vh' : '50vh',
-      backgroundSize: 'cover',
-      marginLeft: right ? 'auto' : '0',
-      backgroundPosition: position ? position : 'center bottom',
-    }
-
-    return <div style={style} />
+  // Adjust image positioning (if image covers area with defined height) and add font-family for polyfill
+  & > img {
+    object-fit: ${props => props.fit || 'cover'} !important;
+    object-position: ${props => props.position || '50% 50%'} !important;
+    font-family: 'object-fit: ${props => props.fit || 'cover'} !important; object-position: ${props => props.position || '50% 50%'} !important;'
   }
-}
+  & > picture > img {
+    object-fit: ${props => props.fit || 'cover'} !important;
+    object-position: ${props => props.position || '50% 50%'} !important;
+    font-family: 'object-fit: ${props => props.fit || 'cover'} !important; object-position: ${props => props.position || '50% 50%'} !important;'
+  }
+`
 
-export default PostHeroImage
+export default BgImage

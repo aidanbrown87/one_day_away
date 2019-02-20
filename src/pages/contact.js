@@ -1,9 +1,8 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
-import PostHeroImage from '../components/HeroImage.1';
+import PostHeroImage from '../components/HeroImage';
 
-import contact from './images/contact.jpg'
 import genericStyles from './genericStyle.module.css'
 import PlaneBreak from '../components/PlaneBreak';
 import { SocialMedia } from '../components/Nav';
