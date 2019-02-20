@@ -9,9 +9,11 @@ export default class BlogTile extends Component {
     this.state = {
       opacity: null,
     }
+
+    this.toggleOpacity = this.toggleOpacity.bind(this)
   }
 
-  toggleOpacity = () => {
+  toggleOpacity() {
     this.setState({ opacity: this.state.opacity === 1 ? null : 1 })
   }
 
