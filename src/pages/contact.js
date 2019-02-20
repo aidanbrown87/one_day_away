@@ -1,32 +1,36 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
-import PostHeroImage from '../components/HeroImage';
+import PostHeroImage from '../components/HeroImage'
 
 import genericStyles from './genericStyle.module.css'
-import PlaneBreak from '../components/PlaneBreak';
-import { SocialMedia } from '../components/Nav';
+import PlaneBreak from '../components/PlaneBreak'
+import { SocialMedia } from '../components/Nav'
 
 const Contact = ({ data }) => {
   return (
     <Layout>
-      <PostHeroImage fluid={data.file.childImageSharp.fluid} height={60} position="center" />
+      <PostHeroImage
+        fluid={data.file.childImageSharp.fluid}
+        height={60}
+        position="center"
+      />
       <div className={genericStyles.content}>
         <h2>Contact Us</h2>
         <PlaneBreak />
         <div>
-          If this is your first visit, hello! If you're here again for some
-          more escapism, thank you and welcome back.
-          </div>
+          If this is your first visit, hello! If you're here again for some more
+          escapism, thank you and welcome back.
+        </div>
         <div>
-          To get in touch, message us on our social pages or feel free to drop a note to {' '}
+          To get in touch, message us on our social pages or feel free to drop a
+          note to{' '}
           <a href="mailto:hello@onedayaway.co.uk?Subject=Hello" target="_top">
             hello@onedayaway.co.uk
           </a>
         </div>
         <SocialMedia />
       </div>
-      
     </Layout>
   )
 }

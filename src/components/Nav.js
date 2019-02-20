@@ -49,13 +49,13 @@ class Nav extends Component {
     return (
       <header className={navStyles.header}>
         <Link to={'/'} style={{ border: 'none', margin: 0 }}>
-          <img
-            className={navStyles.logo}
-            src={logo}
-          />
+          <img className={navStyles.logo} src={logo} />
         </Link>
         <button onClick={this.toggleMenu} className={navStyles.menuButton}>
-          <img src={menu} style={{ width: 18, height: 'auto', marginBottom: 0 }} />
+          <img
+            src={menu}
+            style={{ width: 18, height: 'auto', marginBottom: 0 }}
+          />
         </button>
         <nav
           className={navStyles.nav}
