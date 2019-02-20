@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import logo from './circlelogo.jpg'
-import Instagram from './instagram.1'
+import Instagram from './instagram'
 import style from './footer.module.css'
 
 export default class Footer extends Component {
