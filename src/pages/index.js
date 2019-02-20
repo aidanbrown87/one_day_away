@@ -7,10 +7,8 @@ import Masonry from 'react-masonry-component'
 import Layout from '../components/Layout'
 import BlogTile from '../components/BlogTile'
 import ImageCarousel from '../components/ImageCarousel'
-import PlaneBreak from '../components/PlaneBreak';
 
 class BlogIndex extends React.Component {
-
   formatCarouselImages() {
     return get(this, 'props.data.imagesHero.edges').map(node => {
       return {
@@ -35,14 +33,23 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+
         <ImageCarousel images={this.formatCarouselImages()} />
-        {/* <PostHeroImage
-          image={heroImage.heroImage.childImageSharp.fluid.src}
-          height={60}
-          position={heroImage.heroImagePosition}
-        /> */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '90%', margin: '20px auto', maxWidth: 1200 }}>
-          <h1 style={{ margin: 0, marginTop: -35, color: 'grey' }}>. . . . .</h1>
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '90%',
+            margin: '20px auto',
+            maxWidth: 1200,
+          }}
+        >
+          <h1 style={{ margin: 0, marginTop: -35, color: 'grey' }}>
+            . . . . .
+          </h1>
+
           <Masonry
             options={{
               fitWidth: true,
@@ -65,7 +72,6 @@ class BlogIndex extends React.Component {
               )
             })}
           </Masonry>
-
         </div>
       </Layout>
     )
