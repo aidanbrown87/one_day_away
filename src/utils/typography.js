@@ -23,6 +23,9 @@ const typography = new Typography({
   baseLineHeight: 1.75,
   scaleRatio: 5 / 2,
   overrideStyles: ({ rhythm }, options) => ({
+    '*': {
+      'outline-color': 'green'
+    },
     'h2': {
       marginBottom: 0,
       marginTop: rhythm(2),
