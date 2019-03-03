@@ -6,9 +6,9 @@ import get from 'lodash/get'
 import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import blogPostStyle from './blog-post.module.css'
-import PlaneBreak from '../components/PlaneBreak';
-import PostHeroImage from '../components/HeroImage';
-import PrevNextButton from '../components/PrevNextButton';
+import PlaneBreak from '../components/PlaneBreak'
+import PostHeroImage from '../components/HeroImage'
+import PrevNextButton from '../components/PrevNextButton'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -22,16 +22,24 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }, { name: 'og:image', content: `${siteUrl}${post.frontmatter.heroImage.childImageSharp.fluid.src}`}]}
+          meta={[
+            { name: 'description', content: siteDescription },
+            {
+              name: 'og:image',
+              content: `${siteUrl}${
+                post.frontmatter.heroImage.childImageSharp.fluid.src
+              }`,
+            },
+          ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <PostHeroImage
           height={60}
           fluid={post.frontmatter.heroImage.childImageSharp.fluid}
           position={post.frontmatter.heroImagePosition}
-        />   
+        />
 
-        <div className={blogPostStyle.content} >
+        <div className={blogPostStyle.content}>
           <h2>{post.frontmatter.title}</h2>
           <div
             style={{
@@ -58,11 +66,11 @@ class BlogPostTemplate extends React.Component {
               justifyContent: 'space-between',
               listStyle: 'none',
               padding: 0,
-              width: '100%'
+              width: '100%',
             }}
           >
             <PrevNextButton isPrev linkObject={previous} />
-            <PrevNextButton linkObject={next} />            
+            <PrevNextButton linkObject={next} />
           </div>
         </div>
       </Layout>
