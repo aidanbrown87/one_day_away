@@ -1,29 +1,41 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import classnames from 'classnames'
 
 const MenuButton = ({ onClick, className }) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false)
 
   function click() {
-    setActive(!active);
+    setActive(!active)
     onClick()
   }
 
+  const cn = classnames(className, { "active": active })
+
   return (
-    <button onClick={click} className={`con ${className} ${active ? "active" : ""}`}>
-      <div className="bar top"></div>
-      <div className="bar middle"></div>
-      <div className="bar bottom"></div>
+    <button
+      onClick={click}
+      className={cn}
+    >
+      <div className="bar top" />
+      <div className="bar middle" />
+      <div className="bar bottom" />
     </button>
-  );
-};
+  )
+}
 
 MenuButton.propTypes = {
-  onClick: PropTypes.func,
-};
+  onClick: PropTypes.func.isRequired,
+}
 
 export default styled(MenuButton)`
+  &:focus {
+    outline: none;
+    .bar {
+      background: green;
+    }
+  }
   & .bar {
     z-index: 100;
     display: block;
@@ -31,7 +43,7 @@ export default styled(MenuButton)`
     width: 20px;
     background: grey;
     margin: 3px auto;
-    transition: all .7s ease;
+    transition: all 0.7s ease;
   }
 
   &.active {
@@ -45,4 +57,4 @@ export default styled(MenuButton)`
       width: 0;
     }
   }
-`;
+`
