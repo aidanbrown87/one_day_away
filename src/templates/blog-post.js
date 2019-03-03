@@ -14,6 +14,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteUrl = get(this.props, 'data.site.siteMetadata.siteUrl')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
@@ -21,7 +22,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[{ name: 'description', content: siteDescription }, { name: 'og:image', content: `${siteUrl}${post.frontmatter.heroImage.childImageSharp.fluid.src}`}]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <PostHeroImage
@@ -77,6 +78,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
