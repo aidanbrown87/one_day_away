@@ -45,14 +45,22 @@ class Instagram1 extends Component {
     super()
     this.state = {
       images: [
-        // {
-        //   img: 'i10',
-        //   link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
-        // },
-        // {
-        //   img: 'i9',
-        //   link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
-        // },
+        {
+          img: 'i12',
+          link: 'https://www.instagram.com/p/BuaxTjIAzx9/',
+        },
+        {
+          img: 'i11',
+          link: 'https://www.instagram.com/p/BuGR-gvAOcz/',
+        },
+        {
+          img: 'i10',
+          link: 'https://www.instagram.com/p/Bt4OYQNBhOc/',
+        },
+        {
+          img: 'i9',
+          link: 'https://www.instagram.com/p/BtwU2OaBdZ9/',
+        },
         {
           img: 'i8',
           link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
@@ -95,7 +103,7 @@ class Instagram1 extends Component {
     return (
       <div className={style.insta} ref={ref => (this.insta = ref)}>
         {images ? (
-          images.map(({ img, link }) => (
+          images.slice(0, 8).map(({ img, link }) => (
             <InstaImage
               key={link}
               fluid={data[img].childImageSharp.fluid}
@@ -165,6 +173,34 @@ export default () => (
           }
         }
         i8: file(relativePath: { eq: "insta/8.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i9: file(relativePath: { eq: "insta/9.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i10: file(relativePath: { eq: "insta/10.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i11: file(relativePath: { eq: "insta/11.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        i12: file(relativePath: { eq: "insta/12.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
