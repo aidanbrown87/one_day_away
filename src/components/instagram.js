@@ -45,14 +45,14 @@ class Instagram1 extends Component {
     super()
     this.state = {
       images: [
-        {
-          img: 'i10',
-          link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
-        },
-        {
-          img: 'i9',
-          link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
-        },
+        // {
+        //   img: 'i10',
+        //   link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
+        // },
+        // {
+        //   img: 'i9',
+        //   link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
+        // },
         {
           img: 'i8',
           link: 'https://www.instagram.com/p/BrxU1EaBRCV/',
