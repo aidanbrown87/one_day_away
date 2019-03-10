@@ -5,6 +5,8 @@ heroImage: "./images/20170613222846.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/20170613222846.jpg
 featured: false
+country: India
+region: Kochi
 ---
 
 India had long been on my travel wish-list, so when a break in work contracts coincided with a darling friend's round-the-world trip, it seemed like the fates had aligned especially.

@@ -5,6 +5,8 @@ heroImage: "./images/DSC_7384.jpg"
 heroImagePosition: "center"
 thumbnail: "./images/DSC_7384.jpg"
 featured: true
+country: France
+region: Provence
 ---
 
 If you're spending time in the Provence region of France, it would be quite improper to omit a wine-tasting. So taste (and buy) we did...but first, a stroll around historic Avignon.

@@ -4,6 +4,8 @@ date: "2017-01-01"
 heroImage: "./images/DSC_0528.jpg"
 heroImagePosition: "center"
 thumbnail: ./images/DSC_0528.jpg
+country: Thailand
+region: Koh Tao
 ---
 
 Full disclosure: I'm a planner. I live and love to plan - considering all options, visualising the end result and writing numerous lists along the way. When planning our trips I relish in online reviews, scour Instagram for fellow travellers and try to predict the weather by analysing data from years gone by.

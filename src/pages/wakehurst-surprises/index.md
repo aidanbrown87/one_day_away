@@ -5,6 +5,8 @@ heroImage: "./images/DSC_3641.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/DSC_3641.jpg
 featured: false
+country: United Kingdom
+region: Sussex
 ---
 
 I love surprises. Although I'm generally pretty terrible at keeping secrets, I love the planning involved in a surprise. Knowing that you'll really make that person's day is just magical. So, helping to plan a surprise for my wonderful Mama's birthday was a real joy.

@@ -5,6 +5,8 @@ heroImage: "./images/ken_design_DSC_2202.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/ken_design_DSC_2349.jpg
 featured: true
+country: United Kingdom
+region: London
 ---
 
 If you've ever been to our house, you'll know that Aidan and I have a mild obsession with Pantone. We both quite fancy ourselves as budding designers, so when planning a Saturday date day, where better than the [Design Museum](https://designmuseum.org/)? 

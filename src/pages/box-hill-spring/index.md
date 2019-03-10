@@ -5,6 +5,8 @@ heroImage: "./images/DSC_1638.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/IMG_20190223_161621.jpg
 featured: true
+country: United Kingdom
+region: Surrey
 ---
 
 Wasn't the final weekend in February GLORIOUS? Even if it did bring on all sorts of anxiety at the state of our poor planet. Nonetheless, akin to drinking a glass of champagne when the Titanic was sinking*, we decided to make the most of the unseasonably warm weather. 

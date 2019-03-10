@@ -4,6 +4,8 @@ date: "2017-09-11"
 heroImage: "./images/P1100406.jpg"
 heroImagePosition: "bottom"
 thumbnail: ./images/P1100291.jpg
+country: United Kingdom
+region: Kent
 ---
 
 

@@ -5,6 +5,8 @@ heroImage: "./images/DSC_7153.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/DSC_7153.jpg
 featured: true
+country: France
+region: Provence
 ---
 
 We're here!

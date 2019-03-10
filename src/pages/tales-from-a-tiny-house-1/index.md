@@ -5,6 +5,8 @@ heroImage: "./images/P1100227.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/P1100230.jpg
 featured: false
+country: United Kingdom
+region: Kent
 ---
 
 For Aidan's birthday, I took my boys to a Tiny House in Kent. Featured on George's Clarke's Amazing Spaces, our [Airbnb](https://www.airbnb.co.uk/rooms/6720058?guests=1&adults=1) find was a real treasure. Even better, the owners couldn't have been friendlier or more accommodating of a tiny dog and a birthday-ing husband. 

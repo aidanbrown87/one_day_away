@@ -4,6 +4,8 @@ date: "2017-02-01"
 heroImage: "./images/DSC_1650.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/DSC_1651.jpg
+country: United Kingdom
+region: London
 ---
 
 I love Saturday afternoons. I'll have had my weekly luxurious lie-in, vanilla latte in bed and poached eggs courtesy of a very lovely husband, and I'm ready to seize (what's left of) the day. The working week ahead hasn't yet cast its gloomy cloud of fear over the weekend and leisure time feels endless. And if the sun is shining? Even better.

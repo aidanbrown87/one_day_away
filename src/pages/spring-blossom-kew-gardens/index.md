@@ -5,6 +5,8 @@ heroImage: "./images/DSC_2484.jpg"
 heroImagePosition: "right center"
 thumbnail: ./images/DSC_2539.jpg
 featured: true
+country: United Kingdom
+region: London
 ---
 
 

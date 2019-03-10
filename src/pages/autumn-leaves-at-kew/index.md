@@ -5,6 +5,8 @@ heroImage: "./images/P1110604.jpg"
 heroImagePosition: "right center"
 thumbnail: "./images/P1110604.jpg"
 featured: true
+country: United Kingdom
+region: London
 ---
 
 Autumn might just be my favourite season: boots, scarves, warm light, red leaves. When the weather is good, Autumn can be unbeatably stunning.

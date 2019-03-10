@@ -5,6 +5,8 @@ heroImage: "./images/IMG_20180821_083047.jpg"
 heroImagePosition: "center center"
 thumbnail: ./images/IMG_20180821_083047.jpg
 featured: true
+country: United Kingdom
+region: London
 ---
 
 Yes, this is a cheat post. We're merging two separate days into one - pretty obvious when you see our outfits and the vastly different weather conditions.
