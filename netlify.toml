@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "http://mystifying-chandrasekhar-ceee26.netlify.com/*"
+  to = "http://www.onedayaway.co.uk/:splat"
+  force = true
