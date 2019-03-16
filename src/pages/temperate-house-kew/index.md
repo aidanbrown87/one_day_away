@@ -3,7 +3,7 @@ title: Kew Temperate House
 date: "2018-05-05"
 heroImage: "./images/DSC_6561.jpg"
 heroImagePosition: "center"
-thumbnail: "./images/P1130043.jpg"
+thumbnail: "./images/P1130043.JPG"
 featured: true
 country: United Kingdom
 region: London
