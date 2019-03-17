@@ -21,7 +21,7 @@ It's no surprise then, that the long-awaited opening of the grandiose, magnifice
 
 |  |  |
 | --- | --- |
-| ![Temperate House](./images/P1130043.jpg) | ![Kew plant pots](./images/P1130047.jpg)
+| ![Temperate House](./images/P1130043.JPG) | ![Kew plant pots](./images/P1130047.JPG)
 
 We arranged the dog sitters (thank you again Katrina and Sam), scoped out the weather forecast and had the journey planned to a tee.
 
