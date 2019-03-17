@@ -55,7 +55,7 @@ Keen to make the most of our date day, we went from Kew to [Petersham Nurseries]
 
 |  |  |
 | --- | --- |
-| ![Petersham](./images/P1130267.jpg) | ![Bluebells](./images/DSC_6758.jpg)
+| ![Petersham](./images/P1130267.JPG) | ![Bluebells](./images/DSC_6758.JPG)
 
 ![Tulips](./images/DSC_6712.jpg)
 
