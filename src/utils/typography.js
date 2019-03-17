@@ -45,7 +45,7 @@ const typography = new Typography({
       textDecoration: 'none'
     },
     'a:hover,a:active': {
-      borderBottom: 'none',
+      borderBottomColor: 'transparent',
       backgroundColor: 'rgba(0, 126, 0, 0.2)',
     },
     'thead': {
