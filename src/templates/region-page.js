@@ -67,7 +67,7 @@ class PostPageTemplate extends Component {
 export default PostPageTemplate
 
 export const pageQuery = graphql`
-  query($region) {
+  query($region: String!) {
     site {
       siteMetadata {
         title
@@ -76,7 +76,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { region: { eq: [$region] } } }
+      filter: { frontmatter: { region: { eq: $region } } }
     ) {
       edges {
         node {

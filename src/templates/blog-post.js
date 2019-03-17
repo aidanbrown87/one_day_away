@@ -9,6 +9,7 @@ import blogPostStyle from './blog-post.module.css'
 import PlaneBreak from '../components/PlaneBreak'
 import PostHeroImage from '../components/HeroImage'
 import PrevNextButton from '../components/PrevNextButton'
+import LocationData from '../components/LocationData';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = get(this.props, 'data.site.siteMetadata.siteUrl')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const { frontmatter: { country, region } } = post;
 
     return (
       <Layout location={this.props.location}>
@@ -41,6 +43,7 @@ class BlogPostTemplate extends React.Component {
 
         <div className={blogPostStyle.content}>
           <h2>{post.frontmatter.title}</h2>
+          <LocationData region={region} country={country} />
           <div
             style={{
               ...scale(-1 / 5),
@@ -96,6 +99,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM YYYY")
+        country
+        region
         heroImage {
           childImageSharp {
             fluid(maxWidth: 2000) {

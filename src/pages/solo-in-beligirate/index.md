@@ -6,7 +6,7 @@ heroImagePosition: center
 thumbnail: ./images/DSC_8525.jpg
 featured: false
 country: Italy
-region: Lake Magiore
+region: Lake Maggiore
 ---
 
 One of my (many!) fears when launching this blog was that we would be more noise and that we'd just add to the ever-growing pressure to lead the 'insta-perfect' life. 

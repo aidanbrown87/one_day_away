@@ -18,8 +18,9 @@ export default class BlogTile extends Component {
   }
 
   render() {
-    const style = { width: this.props.columnWidth }
-    const { thumb, title, date, slug } = this.props
+    const { thumb, title, date, slug, columnWidth } = this.props
+    const style = { width: columnWidth }
+
     return (
       <div className={tileStyle.blogTile}>
         <Img

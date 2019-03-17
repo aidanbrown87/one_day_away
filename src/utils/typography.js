@@ -30,6 +30,7 @@ const typography = new Typography({
       marginBottom: 0,
       marginTop: rhythm(2),
       textAlign: 'center',
+      lineHeight: '1.75em'
     },
     'h3': {
       marginBottom: rhythm(1),

@@ -8,6 +8,8 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogPosts = new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const regionPage = path.resolve('./src/templates/region-page.js')
+    const countryPage = path.resolve('./src/templates/country-page.js')
     resolve(
       graphql(
         `
@@ -20,6 +22,8 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    region
+                    country
                   }
                 }
               }
@@ -49,6 +53,32 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
         })
+
+        const locations = posts.map(post => {
+          const { region, country } = post.node.frontmatter;
+          return {
+            region, country
+          }
+        })
+
+        const uniqueRegions = [...new Set(locations.map(l => l.region))]
+        const uniqueCountries = [...new Set(locations.map(l => l.country))]
+
+        uniqueRegions.forEach(region => {
+          createPage({
+            path: region,
+            component: regionPage,
+            context: { region }
+          })
+        });
+
+        uniqueCountries.forEach(country => {
+          createPage({
+            path: country,
+            component: countryPage,
+            context: { country }
+          })
+        });
       })
     )
   })
