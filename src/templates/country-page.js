@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { graphql, Link } from 'gatsby'
+import styled from 'styled-components'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Masonry from 'react-masonry-component'
@@ -8,8 +9,14 @@ import Masonry from 'react-masonry-component'
 import Layout from '../components/Layout'
 import BlogTile from '../components/BlogTile'
 
-class PostPageTemplate extends Component {
+const StyledLink = styled(Link)`
+  padding: 5px;
+  border: none;
+  font-size: 0.9em;
+  margin: 10px;
+`
 
+class PostPageTemplate extends Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -17,6 +24,8 @@ class PostPageTemplate extends Component {
       'props.data.site.siteMetadata.description'
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+
+    const { country, regions } = this.props.pageContext
 
     return (
       <Layout location={this.props.location}>
@@ -36,6 +45,20 @@ class PostPageTemplate extends Component {
             maxWidth: 1200,
           }}
         >
+          <h2>{country}</h2>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+            }}
+          >
+            {regions.map(region => (
+              <StyledLink to={`${country}/${region}`.replace(' ', '')}>
+                {region}
+              </StyledLink>
+            ))}
+          </div>
           <Masonry
             options={{
               fitWidth: true,

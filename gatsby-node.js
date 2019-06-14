@@ -14,7 +14,10 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
                   fields {
@@ -37,11 +40,12 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+          const previous =
+            index === posts.length - 1 ? null : posts[index + 1].node
+          const next = index === 0 ? null : posts[index - 1].node
 
           createPage({
             path: post.node.fields.slug,
@@ -54,31 +58,47 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-        const locations = posts.map(post => {
-          const { region, country } = post.node.frontmatter;
-          return {
-            region, country
+        const locationsMap = posts.reduce((countryMap, post) => {
+          const { region, country } = post.node.frontmatter
+          const countryRegions = countryMap[country]
+
+          if (countryRegions) {
+            return {
+              ...countryMap,
+              [country]: [...new Set([...countryRegions, region])],
+            }
           }
-        })
 
-        const uniqueRegions = [...new Set(locations.map(l => l.region))]
-        const uniqueCountries = [...new Set(locations.map(l => l.country))]
+          return {
+            ...countryMap,
+            [country]: [region],
+          }
+        }, {})
 
-        uniqueRegions.forEach(region => {
+        Object.entries(locationsMap).forEach(([country, regions]) => {
+          const countryPathWithoutSpaces = country.replace(' ', '')
+          console.log(`creating country page for ${countryPathWithoutSpaces}`)
+
           createPage({
-            path: region,
-            component: regionPage,
-            context: { region }
-          })
-        });
-
-        uniqueCountries.forEach(country => {
-          createPage({
-            path: country,
+            path: countryPathWithoutSpaces,
             component: countryPage,
-            context: { country }
+            context: { country, regions },
           })
-        });
+
+          regions.forEach(region => {
+            const regionPathWithoutSpaces = `${country}/${region}`.replace(
+              ' ',
+              ''
+            )
+            console.log(`creating region page for ${regionPathWithoutSpaces}`)
+
+            createPage({
+              path: regionPathWithoutSpaces,
+              component: regionPage,
+              context: { region, country },
+            })
+          })
+        })
       })
     )
   })

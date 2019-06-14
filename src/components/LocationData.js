@@ -12,11 +12,11 @@ const StyledLink = styled(Link)`
 const LocationData = ({ country, region }) => {
   return (
     <div>
-      <StyledLink to={region} className="">
+      <StyledLink to={`${country}/${region}`.replace(" ", "")} className="">
         <b>{region}</b>
       </StyledLink>
       |
-      <StyledLink to={country} className="">
+      <StyledLink to={country.replace(" ", "")} className="">
         {country}
       </StyledLink>
     </div>

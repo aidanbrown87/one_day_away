@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { graphql, Link } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Masonry from 'react-masonry-component'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import BlogTile from '../components/BlogTile'
 
-class PostPageTemplate extends Component {
+const StyledLink = styled(Link)`
+  padding: 5px;
+  border: none;
+  font-size: 0.9em;
+`
 
+class PostPageTemplate extends Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -36,6 +42,7 @@ class PostPageTemplate extends Component {
             maxWidth: 1200,
           }}
         >
+          <h2>{this.props.pageContext.region}</h2>
           <Masonry
             options={{
               fitWidth: true,
@@ -58,6 +65,12 @@ class PostPageTemplate extends Component {
               )
             })}
           </Masonry>
+          <StyledLink
+            to={this.props.pageContext.country.replace(' ', '')}
+            className=""
+          >
+            More posts from {this.props.pageContext.country}
+          </StyledLink>
         </div>
       </Layout>
     )
