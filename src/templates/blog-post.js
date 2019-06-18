@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
+import { DiscussionEmbed } from 'disqus-react'
 
 import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
@@ -9,7 +10,7 @@ import blogPostStyle from './blog-post.module.css'
 import PlaneBreak from '../components/PlaneBreak'
 import PostHeroImage from '../components/HeroImage'
 import PrevNextButton from '../components/PrevNextButton'
-import LocationData from '../components/LocationData';
+import LocationData from '../components/LocationData'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,7 +19,25 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = get(this.props, 'data.site.siteMetadata.siteUrl')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    const { frontmatter: { country, region } } = post;
+    const {
+      frontmatter: {
+        country,
+        region,
+        title,
+        heroImage,
+        heroImagePosition,
+        date,
+      },
+    } = post
+
+    console.log({ location: this.props.location })
+
+    const disqusShortname = 'onedayaway'
+    const disqusConfig = {
+      url: this.props.location.href,
+      identifier: title,
+      title: title,
+    }
 
     return (
       <Layout location={this.props.location}>
@@ -28,21 +47,19 @@ class BlogPostTemplate extends React.Component {
             { name: 'description', content: siteDescription },
             {
               name: 'og:image',
-              content: `${siteUrl}${
-                post.frontmatter.heroImage.childImageSharp.fluid.src
-              }`,
+              content: `${siteUrl}${heroImage.childImageSharp.fluid.src}`,
             },
           ]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+          title={`${title} | ${siteTitle}`}
         />
         <PostHeroImage
           height={60}
-          fluid={post.frontmatter.heroImage.childImageSharp.fluid}
-          position={post.frontmatter.heroImagePosition}
+          fluid={heroImage.childImageSharp.fluid}
+          position={heroImagePosition}
         />
 
         <div className={blogPostStyle.content}>
-          <h2>{post.frontmatter.title}</h2>
+          <h2>{title}</h2>
           <LocationData region={region} country={country} />
           <div
             style={{
@@ -52,7 +69,7 @@ class BlogPostTemplate extends React.Component {
               marginTop: 0,
             }}
           >
-            {post.frontmatter.date}
+            {date}
           </div>
           <PlaneBreak />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -62,6 +79,12 @@ class BlogPostTemplate extends React.Component {
             }}
           />
 
+          <div style={{ width: '100%' }}>
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+          </div>
           <div
             style={{
               display: 'flex',
