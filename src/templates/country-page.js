@@ -10,10 +10,9 @@ import Layout from '../components/Layout'
 import BlogTile from '../components/BlogTile'
 
 const StyledLink = styled(Link)`
-  padding: 5px;
-  border: none;
+  padding: 0 5px;
   font-size: 0.9em;
-  margin: 10px;
+  margin: 5px;
 `
 
 class PostPageTemplate extends Component {
@@ -51,6 +50,7 @@ class PostPageTemplate extends Component {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
+              flexWrap: 'wrap',
             }}
           >
             {regions.map(region => (
