@@ -30,8 +30,6 @@ class BlogPostTemplate extends React.Component {
       },
     } = post
 
-    console.log({ location: this.props.location })
-
     const disqusShortname = 'onedayaway'
     const disqusConfig = {
       url: this.props.location.href,
