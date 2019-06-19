@@ -7,7 +7,7 @@ import logo from './ODA_Logo_b.png'
 import fb from './facebook-logo.png'
 import insta from './instagram-logo.png'
 import menu from './menu-button.png'
-import MenuButton from './nav/MenuButton';
+import MenuButton from './nav/MenuButton'
 
 export const SocialMedia = () => (
   <div className={navStyles.socialNav}>
@@ -52,10 +52,14 @@ class Nav extends Component {
         <Link to={'/'} style={{ border: 'none', margin: 0 }}>
           <img className={navStyles.logo} src={logo} />
         </Link>
-        <MenuButton onClick={this.toggleMenu} className={navStyles.menuButton} />
+        <MenuButton
+          onClick={this.toggleMenu}
+          className={navStyles.menuButton}
+        />
         <nav
           className={navStyles.nav}
           style={{ width: this.state.menuOpen ? 300 : null }}
+          onClick={() => this.setState({ menuOpen: false })}
         >
           <ListLink to="/">Home</ListLink>
           <ListLink to="/about/">About</ListLink>
