@@ -103,14 +103,16 @@ class Instagram1 extends Component {
     return (
       <div className={style.insta} ref={ref => (this.insta = ref)}>
         {images ? (
-          images.slice(0, 8).map(({ img, link }) => (
-            <InstaImage
-              key={link}
-              fluid={data[img].childImageSharp.fluid}
-              link={link}
-              position={this.props.position}
-            />
-          ))
+          images
+            .slice(0, 8)
+            .map(({ img, link }) => (
+              <InstaImage
+                key={link}
+                fluid={data[img].childImageSharp.fluid}
+                link={link}
+                position={this.props.position}
+              />
+            ))
         ) : (
           <b>nothing</b>
         )}
