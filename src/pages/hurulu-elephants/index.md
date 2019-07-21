@@ -25,7 +25,7 @@ We drove for a while, seeing beautiful birds and butterflies along the way, but 
 
 ![hurulu](./images/DSC_9666.jpg)
 
-There might have been some tears! It was truly a magical, magical moment.
+There might have been some tears! It was truly a magical moment.
 
 ![hurulu](./images/DSC_9672.jpg)
 
@@ -39,7 +39,7 @@ As we rounded another corner, we came across the whole troupe - including babies
 | -------------------------------- | -------------------------------- |
 | ![hurulu](./images/DSC_9778.jpg) | ![hurulu](./images/DSC_9862.jpg) |
 
-The weather was a little mixed, but it was actually ideal for a safari trip. Else it would have become unbearable approaching lunchtime.
+The weather was a little mixed, but it was ideal for a safari trip. Else it would have become unbearable approaching lunchtime.
 
 Milton, our guide, was fantastic: incredibly dedicated, knowledgeable and professional. He plied us with wildlife trivia and pointed out animals we'd never have seen otherwise.
 
@@ -49,18 +49,18 @@ Milton, our guide, was fantastic: incredibly dedicated, knowledgeable and profes
 
 The post and pictures might be heavily weighted to the gentle giants, but we also saw:
 
-- A couple of golden oriols
+- A couple of golden orioles
 - Chameleons
 - Eagles
 - Peacocks
 - Green bee-eaters
 - Jackals
-- Jungle fowls (the national bird of Sri Lanka)
+- Jungle fowl (the national bird of Sri Lanka)
 - Hordes of butterflies!
 
 ![hurulu](./images/P1170333.jpg)
 
-How people see these beautiful creatures and decide to shoot and kill them, is just beyond my comprehension. I've never felt so humbled than when surrounded by these intelligent, elegant animals. A truly wonderful day!
+How people see these beautiful creatures and decide to shoot and kill them, is just beyond my comprehension. I've never felt more humbled than when surrounded by these intelligent, elegant animals. A truly wonderful day!
 
 ###The useful bits:###
 

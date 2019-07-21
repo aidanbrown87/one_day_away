@@ -11,7 +11,7 @@ region: The Lake District
 
 Keen to take advantage of a trip to the Lake District for a dear friend's wedding, we booked some additional annual leave, found a [shepherd's hut](https://www.theherdwickhuts.co.uk/) at Rydal Water and had our base for the week.
 
-After a long drive and some rain, we were thrilled to arrive - albeit slightly unprepared for the conditions as I hadn't realised the Hut didn't have electricity (rookie error, I know!). Regardless, we settled in, fired up the log burner and enjoyed our first cosy night in the hut.
+After a long drive and some rain, we were thrilled to arrive - albeit slightly unprepared for the conditions as I hadn't realised the hut didn't have electricity (rookie error, I know!). Regardless, we settled in, fired up the log burner and enjoyed our first cosy night.
 
 |                                       |                                       |
 | ------------------------------------- | ------------------------------------- |
