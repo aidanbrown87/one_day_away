@@ -1,10 +1,10 @@
 ---
 title: Artà & Coastal Roadtrip
-date: "2017-06-09"
-heroImage: "./images/P1030471.jpg"
-heroImagePosition: "center center"
-thumbnail: "./images/DSC_4696.jpg"
-featured: false
+date: '2017-06-09'
+heroImage: './images/P1030471.jpg'
+heroImagePosition: 'center center'
+thumbnail: './images/DSC_4696.jpg'
+featured: true
 country: Spain
 region: Mallorca
 ---
@@ -15,15 +15,15 @@ We're currently mid-planning our summer holiday to Italy in June, and naturally 
 
 We parked on the outskirts of the town, and immediately fell in love with the crumbling buildings and faded glamour. Perfect for strolls in the sun, taking in the history and perhaps an ice cream or two...?!
 
-|  |  |
-| --- | --- |
-| ![Arta](./images/P1030487.jpg) | ![Arta](./images/P1030453.jpg)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Arta](./images/P1030487.jpg) | ![Arta](./images/P1030453.jpg) |
 
 We didn't have any preconceptions or items to tick off our list, so we thoroughly enjoyed strolling the streets and taking in the local sights. I particularly loved the tall and slightly imposing cactuses dotted around.
 
-|  |  |
-| --- | --- |
-| ![Arta](./images/P1030451.jpg) | ![Arta](./images/P1030465.jpg)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Arta](./images/P1030451.jpg) | ![Arta](./images/P1030465.jpg) |
 
 ![Arta](./images/DSC_4766.jpg)
 
@@ -39,11 +39,11 @@ Keen to head back out into the balearic sun, we followed sign posts to the churc
 
 ![Arta](./images/DSC_4696.jpg)
 
-|  |  |
-| --- | --- |
-| ![Arta](./images/P1030502.jpg) | ![Arta](./images/P1030505.jpg)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Arta](./images/P1030502.jpg) | ![Arta](./images/P1030505.jpg) |
 
-From here, the views were spectacular, and the glittering blue sea in the distance (not pictured) was incredibly enticing! 
+From here, the views were spectacular, and the glittering blue sea in the distance (not pictured) was incredibly enticing!
 
 ![Arta](./images/P1030499.jpg)
 
@@ -53,9 +53,9 @@ But first? [Santuari de Sant Salvador](https://www.seemallorca.com/castles/santu
 
 After the short climb up to the fortress, we'd worked up the sort of appetite only tapas can properly sate.
 
-|  |  |
-| --- | --- |
-| ![Arta](./images/P1030574.jpg) | ![Arta](./images/P1030522.jpg)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Arta](./images/P1030574.jpg) | ![Arta](./images/P1030522.jpg) |
 
 ![Arta](./images/DSC_4799.jpg)
 
@@ -67,9 +67,9 @@ Tummies full and feet keen for more exploring, we spent the afternoon searching 
 
 A final stop at the beach to feel the crisp sand between our toes and the warm sea lap at our ankles, and then home to our hotel in Sa Coma: sun-kissed, sleepy and satisfied.
 
-|  |  |
-| --- | --- |
-| ![Arta](./images/P1030611.jpg) | ![Arta](./images/P1030670.jpg)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Arta](./images/P1030611.jpg) | ![Arta](./images/P1030670.jpg) |
 
 ![Arta](./images/P1030701.jpg)
 
@@ -78,4 +78,3 @@ A final stop at the beach to feel the crisp sand between our toes and the warm s
 - [This website](https://www.seemallorca.com/arta) is a great resource to find out more about the history of Artà. We missed the caves mentioned - next time!
 - We can't quite remember the entry price for the Museu Regional D'Artà, but we do remember that it was cheap: maybe 2 euros each.
 - The [Santuari de Sant Salvador](https://www.seemallorca.com/castles/santuari-de-sant-salvador-arta-688512) is not to be confused with its larger relative based on the south-east coast (with accompanying Christ the Redeemer-esque statue).
-

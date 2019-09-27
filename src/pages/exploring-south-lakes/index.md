@@ -4,7 +4,7 @@ date: '2017-10-10'
 heroImage: './images/P1100848.jpg'
 heroImagePosition: 'middle center'
 thumbnail: ./images/P1100704.jpg
-featured: true
+featured: false
 country: United Kingdom
 region: The Lake District
 ---
