@@ -84,7 +84,7 @@ A full, educational, enjoyable day. In my opinion, just what holidaying should b
 - We stayed at [The Tenthola](https://www.booking.com/hotel/lk/the-tenthola.en-gb.html) hotel, hosted by 'Viper', a locally famous Sri Lankan ex-rugby player, now coach. Viper was a real character, who was supremely helpful and full of local advice and stories: a most excellent host!
 - The 3 wheeler from our hotel to the Royal Botanic Gardens in Peradeniya cost 700 rupees (£3) and the park entrance was 1,500 rupees (£6.50) each.
 - The Ceylon Tea Museum cost 800 rupees each, and the return 3 wheeler was 1,500.
-- Although not pictured, we had dinner with friends at [Empire Cafe](https://www.empirecafekandy.com/) (just outside the temple), and the bill for all 4 of us, drinks, dinner and dessert, came to aorund £27. Not too shabby!
+- Although not pictured, we had dinner with friends at [Empire Cafe](https://www.empirecafekandy.com/) (just outside the temple), and the bill for all 4 of us, drinks, dinner and dessert, came to around £27. Not too shabby!
 
 A final note to say thank you, Viper!
 
