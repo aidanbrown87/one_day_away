@@ -1,7 +1,7 @@
 ---
 title: One day in Kandy
 date: '2019-01-15'
-heroImage: './images/P1170544.jpg'
+heroImage: './images/P1170544.JPG'
 heroImagePosition: 'center center'
 thumbnail: ./images/IMG_20190115_122508.jpg
 featured: true

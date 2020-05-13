@@ -1,8 +1,8 @@
 ---
-title: "First stop - Kochi"
-date: "2017-06-01"
-heroImage: "./images/20170613222846.jpg"
-heroImagePosition: "center center"
+title: 'First stop - Kochi'
+date: '2017-06-01'
+heroImage: './images/20170613222846.jpg'
+heroImagePosition: 'center center'
 thumbnail: ./images/20170613222846.jpg
 featured: false
 country: India
@@ -17,10 +17,9 @@ Kochi was our first stop and the perfect introduction to incredible, insane Indi
 
 Our trip started in June: monsoon season in India. Not discouraged by the thought of rain (we're used to it after all...), we set out from [Jojie's Homestay](https://www.booking.com/hotel/in/jojies-homestay-fortkochi.en-gb.html?aid=311076;label=jojies-homestay-fortkochi-1FQkYCVfvCSw9Mq7J80Y4gS162189374156%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284111686%3Akwd-327388356694%3Alp9045909%3Ali%3Adec%3Adm;sid=faa00bda9a6d3fc5659e3e84e07ac007;dest_id=-2093645;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549807724;srpvid=452e637577240363;type=total;ucfs=1&#hotelTmpl) to explore.
 
-
-| | |
-| --- | --- |
-|![Kochi](./images/1030771.jpg) | ![Kochi](./images/1030836.jpg)|
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Kochi](./images/1030771.jpg) | ![Kochi](./images/1030836.jpg) |
 
 We'd sense checked our itinerary with our hosts and received the seal of approval. So after around a 25 minute walk, we arrived to the [Dutch Palace](https://www.tripadvisor.co.uk/Attraction_Review-g297633-d325097-Reviews-Mattancherry_Palace-Kochi_Cochin_Ernakulam_District_Kerala.html) (officially called Mattancherry Palace).
 
@@ -32,29 +31,29 @@ Next on our itinerary was an incense shop where we were also given beautiful hen
 
 ![Kochi](./images/1030779.jpg)
 
-| | |
-| --- | --- |
-|![Kochi](./images/1030811.jpg) | ![Kochi](./images/1030812.jpg)|
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Kochi](./images/1030811.jpg) | ![Kochi](./images/1030812.jpg) |
 
 Charlotte and Hannah managed to persuade me to join them on a visit to a fortune teller's house next, and we jumped in a rickshaw to get there. 10 minutes after arriving, the heavens really opened and we saw our first proper monsoon rain. Perhaps the visit was providential after all.
 
 For 500 rupees (around £5) I was told that I'm 'arrogant', Aidan is 'good' and that we'd have two children: a boy and a girl. I suppose only time will tell!
 
-| | |
-| --- | --- |
-|![Kochi](./images/1030845.jpg) | ![Kochi](./images/1030849.jpg)|
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Kochi](./images/1030845.jpg) | ![Kochi](./images/1030849.jpg) |
 
 After a dinner of [Gobi Manchurian](https://en.wikipedia.org/wiki/Gobi_manchurian) (fried cauliflower in a rich, dark gravy) and parotta bread (a slightly greasy layered flatbread), we headed to a Kathakali show of traditional dancing and music.
 
-If you arrive early enough, in addition to the show, you can see the actors apply the all important make-up. 
+If you arrive early enough, in addition to the show, you can see the actors apply the all important make-up.
 
 ![Kochi](./images/1040005.jpg)
 
 The show was surreal, vibrant and educational, and we thoroughly enjoyed it. Not a bad day to start our trip!
 
-| | |
-| --- | --- |
-|![Kochi](./images/1030861.jpg) | ![Kochi](./images/1040028.jpg)|
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![Kochi](./images/1030861.jpg) | ![Kochi](./images/1040028.jpg) |
 
 ###The useful bits:###
 

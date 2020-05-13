@@ -4,7 +4,7 @@ date: 2018-09-01
 heroImage: ./images/DSC_8525.jpg
 heroImagePosition: center
 thumbnail: ./images/DSC_8525.jpg
-featured: true
+featured: false
 country: Italy
 region: Lake Maggiore
 ---

@@ -4,7 +4,7 @@ date: '2017-06-14'
 heroImage: './images/1040130.jpg'
 heroImagePosition: 'center bottom'
 thumbnail: ./images/1040155.jpg
-featured: true
+featured: false
 country: India
 region: Kerala
 ---

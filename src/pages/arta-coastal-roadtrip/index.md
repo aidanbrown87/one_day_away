@@ -4,7 +4,7 @@ date: '2017-06-09'
 heroImage: './images/P1030471.jpg'
 heroImagePosition: 'center center'
 thumbnail: './images/DSC_4696.jpg'
-featured: true
+featured: false
 country: Spain
 region: Mallorca
 ---

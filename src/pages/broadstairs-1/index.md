@@ -4,7 +4,7 @@ date: '2019-05-04'
 heroImage: './images/DSC_1655.jpg'
 heroImagePosition: 'center center'
 thumbnail: './images/IMG_20190506_134424.jpg'
-featured: false
+featured: true
 country: United Kingdom
 region: Kent
 ---

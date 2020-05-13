@@ -4,7 +4,7 @@ date: '2019-06-15'
 heroImage: './images/P1180552.jpg'
 heroImagePosition: 'center center'
 thumbnail: './images/DSC_1875.jpg'
-featured: true
+featured: false
 country: Italy
 region: Puglia
 ---

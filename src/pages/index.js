@@ -11,6 +11,7 @@ import ImageCarousel from '../components/ImageCarousel'
 class BlogIndex extends React.Component {
   formatCarouselImages() {
     return get(this, 'props.data.imagesHero.edges').map(node => {
+      console.log({ node })
       return {
         ...node.node.frontmatter.heroImage.childImageSharp.fluid,
         position: node.node.frontmatter.heroImagePosition,
@@ -122,6 +123,7 @@ export const pageQuery = graphql`
               }
             }
             heroImagePosition
+            title
           }
         }
       }
