@@ -64,4 +64,4 @@ And finally, some pictures of our smiley, stripy boy loving family time and our 
 - RHS Wisley is near Woking, Surrey, and is located just off the A3 (London to Portsmouth A-road).
 - We drove to the Garden (parking is free), but public transport is possible. Plan your visit [here](https://www.rhs.org.uk/gardens/wisley/Plan-your-visit).
 - If you do use public transport, your entry ticket is a discounted £12.
-- Normal entry costs £16.50; we used our membership. Entry is strictly bookings only - but it's a quick and easy process online.
+- Normal entry costs £16.50; we used our membership. Entry is strictly bookings only during this bizarre and unprecedented time - but it's a quick and easy process online.
