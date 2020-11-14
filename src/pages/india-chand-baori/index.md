@@ -33,7 +33,7 @@ Understandably, the steps down to the bottom are closed (imagine the Health & Sa
 
 ![Chand Baori](./images/P1060760.jpg)
 
-We only needed an hour or so there, but what a detour! We'd never seen anything like it - a subterranean marvel and a photographer's dream. If you get the chance to visit, don't hesistate.
+We only needed an hour or so there, but what a detour! We'd never seen anything like it - a subterranean marvel and a photographer's dream. If you get the chance to visit, don't hesitate.
 
 ###The useful bits:###
 
